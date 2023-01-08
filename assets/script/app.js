@@ -88,7 +88,7 @@ async function getSelectedCity() {
 
 async function getPrayerData() {
   const response = await fetch(
-    `http://api.aladhan.com/v1/calendarByCity?city=${citySelected}&country=${countrySelected}&method=1`
+    `https://api.aladhan.com/v1/calendarByCity?city=${citySelected}&country=${countrySelected}&method=1`
   );
   const data = await response.json();
   let days;
