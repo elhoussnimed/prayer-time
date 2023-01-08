@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "rawy";
+    src: url(../fonts/Rawy-Regular.otf);
+}
+
+body {
+    min-height: 100vh;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Cairo', sans-serif;
+}
+
+.overlay {
+    background-color: white;
+    opacity: .8;
+}
+
+.content {
+    color: black;
+}
+
+.prayer-time form select,
+.prayer-time form input {
+    border: 1px solid #757575;
+}
+
+.prayer-time form input:focus {
+    outline: none
+}
+
+.dates-hadit .hadit {
+    font-size: 22px;
+}
+
+.dates-hadit .hadit,
+.prayer-time .prayer-time-wrapper .arab-font {
+    font-family: "rawy", 'Cairo', sans-serif;
+}
+
+.prayer-time form .btn {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prayer-time form .btn:is(:focus, :hover) {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .dates-hadit {
+        width: 100% !important;
+    }
+
+    .prayer-time {
+        width: 100% !important;
+    }
+
+}
