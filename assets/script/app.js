@@ -126,7 +126,7 @@ async function setDataOnClickOnBtn() {
 
 async function appendDateToDom() {
   const response = await fetch(
-    `https://api.aladhan.com/v1/calendarByCity?city=taza&method=1`
+    `https://api.aladhan.com/v1/calendarByCity?city=taza&country=morocco&method=1`
   );
   const data = await response.json();
   const days = data.data;
